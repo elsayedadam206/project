@@ -1,0 +1,68 @@
+{% load static %}
+<!--loaded static files-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Adam</title>
+    <!--adding bootstrap, custom css and fontawesome files-->
+    <link href="{% static 'mypf/bootstrap-4/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'mypf/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'mypf/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'mypf/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'mypf/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'mypf/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'mypf/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'mypf/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'mypf/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'mypf/css/gijgo.css' %}">
+    <link rel="stylesheet" href="{% static 'mypf/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'mypf/css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'mypf/css/style.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body style="background-image:url('/static/mypf/img/launch.png');">
+    <!-- Adding navbar -->
+    {% include 'mypf/navbar.html' %}
+
+    {% block content %}
+
+    {% endblock %}
+    <!--Adding footer -->
+    {% include 'mypf/footer.html' %}
+    <!-- Adding custom js, bootsrap js, jquery and related script files-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="{% static 'mypf/js/jquery3.3.1.js' %}"></script>
+    <script src="{% static 'mypf/bootstrap-4/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'mypf/js/script.js' %}"></script>
+    <script src="{% static 'mypf/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <script src="{% static 'mypf/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'mypf/js/popper.min.js' %}"></script>
+    <script src="{% static 'mypf/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'mypf/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'mypf/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'mypf/js/ajax-form.js' %}"></script>
+    <script src="{% static 'mypf/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'mypf/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'mypf/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'mypf/js/scrollIt.js' %}"></script>
+    <script src="{% static 'mypf/js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'mypf/js/wow.min.js' %}"></script>
+    <script src="{% static 'mypf/js/nice-select.min.js' %}"></script>
+    <script src="{% static 'mypf/js/jquery.slicknav.min.js' %}"></script>
+    <script src="{% static 'mypf/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'mypf/js/plugins.js' %}"></script>
+    <script src="{% static 'mypf/js/gijgo.min.js' %}"></script>
+
+    <!--contact js-->
+    <script src="{% static 'mypf/js/contact.js' %}"></script>
+    <script src="{% static 'mypf/js/jquery.ajaxchimp.min.js' %}"></script>
+    <script src="{% static 'mypf/js/jquery.form.js' %}"></script>
+    <script src="{% static 'mypf/js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'mypf/js/mail-script.js' %}"></script>
+
+    <script src="{% static 'mypf/js/main.js"></script>
+</body>
+</html>

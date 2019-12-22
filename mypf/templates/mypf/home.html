@@ -1,0 +1,58 @@
+{% extends 'mypf/base.html' %}
+
+{% block content %}
+   <!-- slider_area_start -->
+   <div class="slider_area">
+    <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1 overlay2">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-9">
+                    <div class="slider_text text-center">
+                        
+                        <h3>Web Programming</h3>
+                        <div class="find_dowmain">
+                            <form action="#" class="find_dowmain_form">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- slider_area_end -->
+<div class="slider_area">
+    <div class="container">
+        <div class="row justify-content-center margin">
+            <div class="col-7">
+                <!--Custom Api form-->
+                <form method="POST" class="form-inline">
+                    {% csrf_token %}
+                  <input type="text" name="name" class="form-control mb-2 mr-sm-2" id="name" placeholder="Jane Doe">
+    
+                    <select name="gender" class="custom-select mb-2 mr-sm-2" id="gender">
+                        <option selected>Select</option>
+                        <option value="m">Male</option>
+                        <option value="f">Female</option>
+                    </select>
+                    <button type="button" class="btn btn-primary mb-2 btn-sub">Generate Your</button>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center margin">
+            <div class="pflink">
+            </div>
+        </div>
+        <div class="row justify-content-center margin">
+            <div class="col-8">
+                <img class="img-fluid" name="srcapi" id="srcapi" src="https://belikebill.ga/billgen-API.php?default=1&name=Jane Doe&sex=f">
+    
+            </div>
+        </div>
+    </div>
+    
+</div>
+<br/>
+
+{% endblock %}
+
